@@ -3,19 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-1: rgb(26, 26, 29);
+  --color-2: rgb(78, 78, 80);
+  --color-3: rgb(111, 34, 50);
+  --color-4: rgb(151, 7, 65);
+  --color-5: rgb(195, 7, 63);
+  --color-6: rgb(243, 243, 243);
+  --color-7: rgb(255, 255, 255);
+  --color-8: rgb(170, 170, 170);
+  --color-9: rgb(52, 52, 52);
+  --color-10: rgb(8, 150, 16);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
-body {
+/* body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
