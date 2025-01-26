@@ -14,6 +14,18 @@
   --color-9: rgb(52, 52, 52);
   --color-10: rgb(8, 150, 16);
 }
+@layer base {
+  h1 {
+    @apply text-[40px];
+    @apply font-bold;
+    @apply leading-tight;
+  }
+  h2 {
+    @apply text-[32px];
+    @apply font-bold;
+    @apply leading-tight;
+  }
+}
 
 /* @media (prefers-color-scheme: dark) {
   :root {

@@ -7,6 +7,9 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Tahoma", "sans-serif"],
+    },
     extend: {
       colors: {
         color1: "var(--color-1)",
