@@ -1,20 +1,23 @@
 import Image from 'next/link';
 import Link from 'next/link';
-import Border from './components/border';
-import LogoColor from './components/logo-color';
-import LaptopCircle from './components/laptop-circle';
+import BorderTopSvg from './components/border-top-svg';
+import LogoBrandSvg from './components/logo-brand-svg';
+import LaptopCircleSvg from './components/laptop-circle-svg';
+import BorderBottomSvg from './components/border-bottom-svg';
+import Footer from './components/footer';
 
 export default function Home() {
   return (
     <div className="bg-color6 left-0 leading-none top-0 overflow-hidden w-full sticky">
-      <Border />
+      <BorderTopSvg className="fill-color4"/>
+      {/* navigation */}
         <nav className="bg-color6">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <Link 
               href="#"
-              className="flex items-center space-x-3 rtl:space-x-reverse"
-            >
-              <LogoColor width='40px' height='40px'/>
+              className="flex items-center space-x-3 rtl:space-x-reverse">
+              <LogoBrandSvg width='40px' height='40px' gradDark='rgb(111, 34, 50)' gradMed='rgb(151, 7, 65)' gradLight='rgb(195, 7, 63)'/>
+              
             </Link>
 
             <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -57,18 +60,26 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="self-center min-w-52 max-w-80 p-8 relative top-0 order-2 z-4">
-                    {/* <img src="img/self-img.jpg" className="about_me_img" alt="picture of me"> */}
-                    <LaptopCircle width='100%' height='100%'/>
+                    <LaptopCircleSvg width='100%' height='100%'/>
                 </div>
             </div>
         </section>
 
+        {/* svg divider bottom */}
+        <div className="bg-color6 w-full overflow-hidden left-0 top-0 leading-none">
+          <BorderBottomSvg className="fill-color4"/>
+        </div>
 
+        {/* portfolio section */}
+        <section className="bg-color4 pt-8 pb-11" id="portfolio">
+          <h1 className="text-color6 text-center mb-16">Some of My Work</h1>
+          <div className="flex gap-5 flex-row justify-center pb-32 pt-32">
+            <p>Projects go here</p>
+          </div>
+        </section>
 
-
-
-
-
+        {/* footer */}
+        <Footer />
 
     </div>
   );

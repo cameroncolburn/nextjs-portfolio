@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from 'next/link'
+import LogoBrandSvg from "./logo-brand-svg";
 
 export default function FooterBar() {
     return (
@@ -7,15 +7,9 @@ export default function FooterBar() {
         <div className="container flex flex-col items-center py-4 sm:py-8 mx-auto px-7 max-w-5xl sm:flex-row">
             <Link 
                 href=""
-                className="h-5 text-base group relative z-30 flex justify-center items-center space-x-1.5"
-            >
+                className="h-5 text-base group relative z-30 flex justify-center items-center space-x-1.5">
                 <span className="text-xl -translate-y-0.5 group-hover:-rotate-12 group-hover:scale-[1.2] ease-in-out duration-300">
-                    <Image
-                        src="/initials-logo-bw.svg"
-                        alt="branding logo"
-                        width={16}
-                        height={16}
-                    />
+                    <LogoBrandSvg width={16} height={16}/>
                 </span>
                 <span className="-translate-y-0.5"></span>
             </Link>
