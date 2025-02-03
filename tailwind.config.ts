@@ -22,6 +22,7 @@ export default {
         color8: "var(--color-8)",
         color9: "var(--color-9)",
         color10: "var(--color-10)",
+        color11: "var(--color-11)",
       },
     },
   },

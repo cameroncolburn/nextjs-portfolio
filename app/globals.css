@@ -12,7 +12,8 @@
   --color-7: rgb(255, 255, 255);
   --color-8: rgb(170, 170, 170);
   --color-9: rgb(52, 52, 52);
-  --color-10: rgb(8, 150, 16);
+  --color-10: rgb(7, 151, 93);
+  --color-11: rgb(7, 125, 78);
 }
 @layer base {
   h1 {

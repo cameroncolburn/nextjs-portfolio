@@ -4,6 +4,8 @@ import BorderTopSvg from './components/border-top-svg';
 import LogoBrandSvg from './components/logo-brand-svg';
 import LaptopCircleSvg from './components/laptop-circle-svg';
 import BorderBottomSvg from './components/border-bottom-svg';
+import Card from './components/card';
+import Contact from './components/contact';
 import Footer from './components/footer';
 
 export default function Home() {
@@ -74,9 +76,11 @@ export default function Home() {
         <section className="bg-color4 pt-8 pb-11" id="portfolio">
           <h1 className="text-color6 text-center mb-16">Some of My Work</h1>
           <div className="flex gap-5 flex-row justify-center pb-32 pt-32">
-            <p>Projects go here</p>
+            <Card />
           </div>
         </section>
+        {/* contact */}
+        <Contact />
 
         {/* footer */}
         <Footer />
