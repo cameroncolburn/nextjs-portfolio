@@ -8,7 +8,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      sans: ["Tahoma", "sans-serif"],
+      sans: ["Inter", "sans-serif"],
     },
     extend: {
       colors: {
@@ -23,6 +23,9 @@ export default {
         color9: "var(--color-9)",
         color10: "var(--color-10)",
         color11: "var(--color-11)",
+      },
+      backgroundImage: {
+        "background-image": "linear-gradient(to bottom left, var(--tw-gradient-stops))",
       },
     },
   },

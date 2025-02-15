@@ -7,8 +7,8 @@ import LinkedinLogoSvg from './linkedin-logo';
 export default function FooterBar() {
     return (
         // <footer className="bg-neutral-800">
-        <footer className="bg-color1">
-        <div className="container flex flex-col items-center py-4 sm:py-8 mx-auto px-7 max-w-5xl sm:flex-row">
+        <footer className="bg-neutral-800">
+        <div className="container flex flex-col items-center py-4 sm:py-6 mx-auto px-7 max-w-5xl sm:flex-row">
             <Link 
                 href=""
                 className="h-5 text-base group relative z-30 flex justify-center items-center space-x-1.5">
@@ -17,7 +17,7 @@ export default function FooterBar() {
                 </span>
                 <span className="-translate-y-0.5"></span>
             </Link>
-            <p className="sm:ml-4 sm:pl-4 sm:border-l-2 text-neutral-100">
+            <p className="sm:ml-4 sm:pl-4 sm:border-l-2 text-neutral-100 font-semibold">
             &copy; {getCurrentYear()} Cameron Colburn</p>
             <span className="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
                 <Link href="https://github.com/cameroncolburn/" target="_blank" className="text-neutral-100 hover:text-sky-300">
