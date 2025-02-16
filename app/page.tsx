@@ -12,62 +12,14 @@ export default function Home() {
   return (
     <div className="bg-color6 left-0 leading-none top-0 overflow-hidden w-full sticky">
       <BorderTopSvg className="fill-rose-900"/>
-      {/* navigation */}
-        {/* <nav className="bg-color6">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <Link 
-              href="#"
-              className="flex items-center space-x-3 rtl:space-x-reverse">
-              <LogoBrandSvg width='40px' height='40px' gradDark='rgb(111, 34, 50)' gradMed='rgb(151, 7, 65)' gradLight='rgb(195, 7, 63)'/>
-              
-            </Link>
-
-            <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-                <span className="sr-only">Open main menu</span>
-                <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
-                </svg>
-            </button>
-            <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul className="font-semibold flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-                <li>
-                  <a href="#" className="block py-2 px-3 text-neutral-900 rounded md:bg-transparent md:text-neutral-950 md:p-0" aria-current="page">Home</a>
-                </li>
-                <li>
-                  <a href="#" className="block py-2 px-3 text-neutral-900 rounded md:bg-transparent md:text-neutral-950 md:p-0">About</a>
-                </li>
-                <li>
-                  <a href="#" className="block py-2 px-3 text-neutral-900 rounded md:bg-transparent md:text-neutral-950 md:p-0">Portfolio</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav> */}
-
-        {/* landing */}
-        {/* <section className="bg-color6" id="about">
-            <div className="flex gap-5 flex-row justify-center pb-32 pt-32">
-                <div className="self-center max-w-2xl p-4 order-1 z-2">
-                    <h1 className="text-5xl font-bold text-rose-700">Cameron Colburn</h1>
-                    <p className="text-xl font-semibold my-5 text-neutral-500">
-                        Full-Stack Software Developer
-                    </p>
-                </div>
-                <div className="self-center min-w-52 max-w-80 p-8 relative top-0 order-2 z-4">
-                    <LaptopCircleSvg width='230' height='230'/>
-                </div>
-            </div>
-        </section> */}
         <section className="bg-color6 h-screen" id="about">
-            <div className="flex justify-around items-center h-5/6 max-w-5xl mx-auto">
+            <div className="flex flex-col justify-center items-center h-5/6 max-w-5xl mx-auto md:flex-row md:justify-around">
                 <div className="self-center max-w-2xl p-4 order-1 z-2">
-                    <h1 className="text-5xl font-bold text-rose-700">Cameron Colburn</h1>
-                    <p className="text-xl font-semibold my-5 text-neutral-500">
-                        Full-Stack Software Developer
-                    </p>
+                    <h1 className="text-rose-700 font-bold text-3xl sm:text-4xl">Cameron Colburn</h1>
+                    <p className="text-neutral-500 font-medium">Full-Stack Software Developer</p>
                 </div>
-                <div className="self-center min-w-52 max-w-80 p-8 relative top-0 order-2 z-4">
-                    <LaptopCircleSvg width='230' height='230'/>
+                <div className="self-center p-8 relative top-0 order-first md:order-last z-4">
+                    <LaptopCircleSvg className="w-[160px] h-[160px] sm:w-[230px] sm:h-[230px]"/>
                 </div>
             </div>
             <div className="h-1/6">
@@ -82,31 +34,26 @@ export default function Home() {
               </Link>
             </div>
         </section>
-
-        {/* svg divider bottom */}
-        {/* <div className="bg-color6 w-full overflow-hidden left-0 top-0 leading-none">
-          <BorderBottomSvg className="fill-color4"/>
-        </div> */}
         {/* About Me */}
-        <section className="py-24 bg-gradient-to-bl from-rose-800 via-rose-900 to-rose-700" id="aboutMe">
-            <div className="flex justify-between items-start max-w-5xl mx-auto">
+        <section className="py-12 bg-gradient-to-bl from-rose-800 via-rose-900 to-rose-700 md:py-24" id="aboutMe">
+            <div className="flex flex-col justify-between items-start max-w-5xl mx-auto md:flex-row">
             <div className="p-6">
                     <Image
                         src="/self-img.jpg"
                         alt="self image"
                         className="rounded-full border-4 border-rose-700"
-                        width={420}
-                        height={420}
+                        width={300}
+                        height={300}
                     />
                 </div>
                 <div className="p-6 z-10">
-                    <h2 className="headingBackground text-3xl font-bold text-neutral-100 relative w-fit" >About Me</h2>
+                     <h2 className="text-neutral-100 text-bold">About Me</h2>
                     <p className="mt-4 text-neutral-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, vel quasi enim ducimus qui tempora, in beatae eveniet officiis neque quibusdam ipsa aspernatur, voluptates accusantium!</p>
                 </div>
             </div>
             <div className="max-w-5xl mx-auto pt-[100px]">
                 <div className="z-10">
-                    <h2 className="headingBackground text-3xl font-bold text-neutral-100 relative w-fit">Technologies</h2>
+                    <h2 className="text-neutral-100 text-bold">Technologies</h2>
                     <div className="grid grid-cols-6 gap-4 pt-12" id="tech-container">
                         <div className="justify-items-center">
                           {/* java  */}
@@ -178,15 +125,35 @@ export default function Home() {
              </div>
              </div>
         </section>
-
+          {/* down arrow */}
+          <div className="mt-[30px]">
+          <Link href="#portfolio">
+            <Image
+                src="/down-arrow.svg"
+                alt="down arrow icon"
+                width={25}
+                height={25}
+                className="mx-auto animate-bounce"
+            />
+          </Link>
+        </div>
         {/* portfolio section */}
-        <section className="bg-color6 pt-8 pb-11" id="portfolio">
-          {/* <h1 className="text-color1 text-center mb-16">Some of My Work</h1> */}
-          <h2 className="text-3xl font-bold text-neutral-900 relative w-fit">Projects</h2>
+        <section className="max-w-5xl mx-auto py-[150px]" id="portfolio">
+        <h2 className="text-neutral-800 text-bold">Projects</h2>
+        <div className="grid grid-cols-3 gap-8 pt-12" id="tech-container">
+        <Card />
+        <Card />
+        <Card />
+        </div>
+
+          </section>
+        {/* <section className="bg-color6 pt-8 pb-11" id="portfolio">
+          
+          
           <div className="flex gap-5 flex-row justify-center pb-32 pt-32">
-            <Card />
+            
           </div>
-        </section>
+        </section> */}
         {/* contact */}
         <Contact />
 

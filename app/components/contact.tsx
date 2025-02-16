@@ -5,8 +5,8 @@ export default function Contact() {
         <section className="pt-12 pb-12 bg-gradient-to-bl from-rose-800 via-rose-900 to-rose-700">
             <div className="flex justify-between items-start max-w-5xl mx-auto">
                 <div className="p-6 z-10">
-                    <h2 className="text-3xl font-bold text-neutral-100 relative w-fit">Contact Me</h2>
-                    <p className="mt-4 text-neutral-100 font-medium">Do you have an opportunity you want to discuss, or perhaps just want to chat? Drop me a line.</p>
+                    <h2 className="text-neutral-100 font-bold">Contact Me</h2>
+                    <p className="mt-4 text-neutral-100">Do you have an opportunity you want to discuss, or perhaps just want to chat? Drop me a line.</p>
                 </div>
 
                 <div>

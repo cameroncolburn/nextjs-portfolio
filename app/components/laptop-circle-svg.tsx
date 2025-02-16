@@ -1,24 +1,25 @@
 import React from "react";
 
 interface LaptopCircleSvgProps extends React.SVGProps<SVGSVGElement> {
-    width?: string | number;
-    height?: string | number;
+    // width?: string | number;
+    // height?: string | number;
     className?: string;
     outerCircle?: string;
     innerHighlight?: string;
 }
 
 const LaptopCircleSvg: React.FC<LaptopCircleSvgProps> = ({
-    width,
-    height,
+    // width,
+    // height,
     className,
     outerCircle = "rgb(191,25,68)",
     innerHighlight = "rgb(25,191,148)",
     ...props
 }) => (
         <svg 
-        width={width}
-        height={height} 
+        // width={width}
+        // height={height} 
+        className={className}
         viewBox="0 0 122 122" 
         version="1.1" 
         xmlns="http://www.w3.org/2000/svg" 
