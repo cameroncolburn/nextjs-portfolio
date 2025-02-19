@@ -15,11 +15,11 @@ export default function Home() {
         <section className="bg-color6 h-screen" id="about">
             <div className="flex flex-col justify-center items-center h-5/6 max-w-5xl mx-auto md:flex-row md:justify-around">
                 <div className="self-center max-w-2xl p-4 order-1 z-2">
-                    <h1 className="text-rose-700 font-bold text-3xl sm:text-4xl">Cameron Colburn</h1>
-                    <p className="text-neutral-500 font-medium">Full-Stack Software Developer</p>
+                    <h1 className="text-rose-700 font-bold text-3xl md:text-5xl sm:text-4xl">Cameron Colburn</h1>
+                    <p className="text-neutral-500 font-medium text-lg sm:text-xl">Full-Stack Software Developer</p>
                 </div>
                 <div className="self-center p-8 relative top-0 order-first md:order-last z-4">
-                    <LaptopCircleSvg className="w-[160px] h-[160px] sm:w-[230px] sm:h-[230px]"/>
+                    <LaptopCircleSvg className="w-[230px] h-[230px] sm:w-[300px] sm:h-[300px]"/>
                 </div>
             </div>
             <div className="h-1/6">
@@ -41,9 +41,9 @@ export default function Home() {
                     <Image
                         src="/self-img.jpg"
                         alt="self image"
-                        className="rounded-full border-4 border-rose-700"
-                        width={300}
-                        height={300}
+                        className="rounded-full border-4 border-rose-700 max-w-40"
+                        width={230}
+                        height={230}
                     />
                 </div>
                 <div className="p-6 z-10">
@@ -51,10 +51,10 @@ export default function Home() {
                     <p className="mt-4 text-neutral-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, vel quasi enim ducimus qui tempora, in beatae eveniet officiis neque quibusdam ipsa aspernatur, voluptates accusantium!</p>
                 </div>
             </div>
-            <div className="max-w-5xl mx-auto pt-[100px]">
+            <div className="max-w-5xl mx-auto pt-[100px] px-6">
                 <div className="z-10">
                     <h2 className="text-neutral-100 text-bold">Technologies</h2>
-                    <div className="grid grid-cols-6 gap-4 pt-12" id="tech-container">
+                    <div className="grid grid-cols-3 md:grid-cols-6 sm:grid-cols-4 gap-4 pt-12" id="tech-container">
                         <div className="justify-items-center">
                           {/* java  */}
                           <svg viewBox="0 0 128 128" className="w-20 h-20">
@@ -138,9 +138,9 @@ export default function Home() {
           </Link>
         </div>
         {/* portfolio section */}
-        <section className="max-w-5xl mx-auto py-[150px]" id="portfolio">
+        <section className="max-w-5xl mx-auto py-[120px] px-6" id="portfolio">
         <h2 className="text-neutral-800 text-bold">Projects</h2>
-        <div className="grid grid-cols-3 gap-8 pt-12" id="tech-container">
+        <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 pt-12" id="tech-container">
         <Card />
         <Card />
         <Card />
