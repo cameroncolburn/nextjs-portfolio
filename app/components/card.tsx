@@ -5,7 +5,7 @@ import GithubLogoSvg from './github-logo';
 
 export default function Card() {
     return (
-<div className="max-w-sm bg-color7 rounded-lg transition-transform duration-150 hover:shadow-[_1px_2px_8px_rgb(23_23_23_/_0.6)] hover:scale-105">
+<div className="w-sm bg-color7 rounded-lg transition-transform duration-150 hover:shadow-[_1px_2px_8px_rgb(23_23_23_/_0.6)] hover:scale-105">
     <div className="relative bg-[url('/profilesticker.png')] bg-cover bg-center bg-no-repeat min-h-[168px] rounded-tl-[5px] rounded-tr-[5px]">
         <span className="inline-block bg-yellow-300 text-blue-800 font-bold uppercase py-1 px-3 mt-3 rounded-r-full text-sm">Website</span>
     </div>

@@ -18,18 +18,19 @@ export default function FooterBar() {
                     </span>
                     <span className="-translate-y-0.5"></span>
                 </Link>
-                {/* <p className="sm:ml-4 sm:pl-4 sm:border-l-2 text-neutral-100"> */}
                 <p className="ml-4 pl-4 border-l-2 text-neutral-100">
                 &copy; {getCurrentYear()} Cameron Colburn</p>
             </span>
-            <span className="inline-flex justify-center mt-0 mb-4 space-x-5 sm:ml-auto sm:mt-4 sm:mb-0 sm:justify-start">
+            <span className="flex justify-center mt-0 mb-6 space-x-5 ml-0 sm:mb-0 sm:ml-auto">
                 <Link href="https://github.com/cameroncolburn/" target="_blank" className="text-neutral-100 hover:text-sky-300">
                     <span className="sr-only">Github</span>
-                    <GithubLogoSvg width={24} height={24}/>
+                    {/* <GithubLogoSvg width={24} height={24}/> */}
+                    <GithubLogoSvg className="w-[45px] h-[45px] sm:w-[24px] sm:h-[24px]"/>
                 </Link>
                 <Link href="https://www.linkedin.com/in/camcolburn" target="_blank" className="text-neutral-100 hover:text-sky-300">
                     <span className="sr-only">LinkedIn</span>
-                    <LinkedinLogoSvg width={24} height={24}/>
+                    {/* <LinkedinLogoSvg width={24} height={24}/> */}
+                    <LinkedinLogoSvg className="w-[45px] h-[45px] sm:w-[24px] sm:h-[24px]"/>
                 </Link>
             </span>
         </div>

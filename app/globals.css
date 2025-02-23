@@ -28,17 +28,9 @@
     @apply font-bold;
     @apply leading-tight;
   }
-}
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h3 {
+    @apply text-[24px];
+    @apply font-bold;
+    @apply leading-tight;
   }
-} */
-
-/* body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-} */
+}
