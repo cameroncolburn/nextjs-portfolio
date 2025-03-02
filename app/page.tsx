@@ -5,7 +5,7 @@ import LogoBrandSvg from './components/logo-brand-svg';
 import LaptopCircleSvg from './components/laptop-circle-svg';
 import BorderBottomSvg from './components/border-bottom-svg';
 import Card from './components/card';
-import Contact from './components/contact';
+import ContactForm from './contact/form'
 import Footer from './components/footer';
 
 export default function Home() {
@@ -48,7 +48,11 @@ export default function Home() {
                 </div>
                 <div className="p-6 z-10">
                      <h2 className="text-neutral-100 text-bold">About Me</h2>
-                    <p className="mt-4 text-neutral-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, vel quasi enim ducimus qui tempora, in beatae eveniet officiis neque quibusdam ipsa aspernatur, voluptates accusantium!</p>
+                    <p className="mt-4 text-neutral-100">My name is Cam and I am a recent graduate of the three year Software Development program at Mohawk College in Hamilton. Beyond my education, I have spent several years building and broadening my skillset as a Developer.<br/><br/>
+
+My experience as a full-stack developer ranges from working with modern javascript frameworks, designing and improving UI for web apps, writing SQL queries to build reports, and using AI tools in chabots and facial recognition software.<br/><br/>
+
+Please visit the projects section below for examples of my work!</p>
                 </div>
             </div>
             <div className="max-w-5xl mx-auto pt-[60px] px-6">
@@ -148,7 +152,20 @@ export default function Home() {
 
           </section>
         {/* contact */}
-        <Contact />
+        <section className="pt-8 pb-8 sm:pt-12 sm:pb-12 bg-gradient-to-bl from-rose-800 via-rose-900 to-rose-700">
+            <div className="flex flex-col md:flex-row justify-between items-start max-w-5xl mx-auto">
+                <div className="p-6 z-10 sm:px-4 sm:py-6 mx-auto">
+                    <h2 className="text-neutral-100 font-bold">Contact Me</h2>
+                    <p className="mt-4 text-neutral-100">Do you have an opportunity you want to discuss, or perhaps just want to chat? Drop me a line.</p>
+                </div>
+
+                <div className="px-4 pb-6 mx-0 sm:mx-auto">
+                    <div className="rounded-lg">
+                      <ContactForm />
+                    </div>
+                </div>
+            </div>
+        </section>
 
         {/* footer */}
         <Footer />
