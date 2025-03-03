@@ -57,7 +57,7 @@ Please visit the projects section below for examples of my work!</p>
             </div>
             <div className="max-w-5xl mx-auto pt-[60px] px-6">
                 <div className="z-10">
-                    <h3 className="text-neutral-300 text-bold text-lg sm:text-2xl">Technologies I am most familiar with:</h3>
+                    <h3 className="text-neutral-300 text-bold text-lg sm:text-2xl text-center">Technologies I am most familiar with:</h3>
                     <div className="grid grid-cols-3 md:grid-cols-6 sm:grid-cols-4 gap-4 pt-12" id="tech-container">
                         <div className="justify-items-center">
                           {/* java  */}
