@@ -4,8 +4,8 @@ import GlobeSvg from './globe-svg';
 import GithubLogoSvg from './github-logo';
 
 interface CardProps {
-    title: string;
-    description: string;
+    title?: string;
+    description?: string;
     category?: string;
     tag1?: string;
     tag2?: string;
