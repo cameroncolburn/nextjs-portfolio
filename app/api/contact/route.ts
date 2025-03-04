@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import FormData from "form-data";
-import Mailgun from "mailgun.js";
+// import Mailgun from "mailgun.js";
+const Mailgun = require('mailgun.js');
 
 export async function POST(request: NextRequest) {
  try {
