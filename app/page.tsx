@@ -145,9 +145,40 @@ Please visit the projects section below for examples of my work!</p>
         <section className="max-w-6xl mx-auto py-[60px] px-6" id="portfolio">
         <h2 className="text-neutral-800 text-bold text-center">Projects</h2>
         <div className="grid grid-cols-1 mx-auto md:grid-cols-3 sm:grid-cols-2 sm:mx-0 gap-6 md:gap-4 sm:gap-4 py-12" id="tech-container">
-        <Card />
-        <Card />
-        <Card />
+        <Card 
+          title="Car Maintenance App"
+          description="This app served as my capstone project and allows a family to track car maintenance appointments. The backend is a REST API built with Laravel and the frontend is built using CodeIgniter with Bootstrap, and includes basic authentication."
+          category="Capstone Project"
+          tag1="PHP"
+          tag2="REST API"
+          tag3="Laravel"
+          tag4="Bootstrap"
+          tag5="CodeIgniter"
+          weblink="https://capstone.colburndigital.com/"
+          githublink="https://github.com/cameroncolburn/car_maintenance_tracker"
+          className="relative bg-[url('/capstone-pic.png')] bg-cover bg-center bg-no-repeat min-h-[168px] rounded-tl-[5px] rounded-tr-[5px]"
+        />
+        <Card 
+          title="Facial Recognition App"
+          description="I was the sole contributor to this Mohawk College research project. This is a facial recgnition application written in Python and using the Deepface framework. The Python application is integrated into a PHP MVC website that includes a MySQL database and an image gallery."
+          category="AI Research Project"
+          tag1="Python"
+          tag2="Deepface"
+          tag3="PHP"
+          githublink="https://github.com/cameroncolburn/from-the-archives"
+          className="relative bg-[url('/face-ai-project.png')] bg-cover bg-center bg-no-repeat min-h-[168px] rounded-tl-[5px] rounded-tr-[5px]"
+        />
+        <Card 
+          title="Coin Collector Chatbot"
+          description="This is a Mohawk College group research project I was a member of. The chabot logic was written with Python and incorporates ChatGPT API for the conversation functionality. The chatbot application is then integrated into a Laravel webapp."
+          category="AI Research Project"
+          tag1="PHP"
+          tag2="Laravel"
+          tag3="Python"
+          tag4="ChatGPT"
+          githublink='https://github.com/cameroncolburn/coin-collector-chatbot'
+          className="relative bg-[url('/coin-chatbot.png')] bg-cover bg-center bg-no-repeat min-h-[168px] rounded-tl-[5px] rounded-tr-[5px]"
+        />
         </div>
 
           </section>
