@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import FormData from "form-data";
 import Mailgun from "mailgun.js";
+import { contactSchema } from "../../lib/schemas/contact";
 
 function escapeHtml(text: string): string {
   const map: Record<string, string> = {
@@ -15,15 +16,14 @@ function escapeHtml(text: string): string {
 
 export async function POST(request: NextRequest) {
  try {
-    const { name, email, message } = await request.json();
+    const body = await request.json();
+    const result = contactSchema.safeParse(body);
 
-    if (!name || !email || !message) {
-        return NextResponse.json({ error: "All fields are required" }, { status: 400 });
+    if (!result.success) {
+        return NextResponse.json({ error: result.error.issues[0].message }, { status: 400 });
     }
 
-    if (!/\S+@\S+\.\S+/.test(email)) {
-    return NextResponse.json({ error: "Invalid email address" }, { status: 400 });
-    }
+    const { name, email, message } = result.data;
 
     const safeName = escapeHtml(name);
     const safeEmail = escapeHtml(email);

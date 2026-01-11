@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from "react";
+import { contactSchema } from "../lib/schemas/contact";
 
 export default function ContactForm() {
     const [formData, setFormData] = useState({
@@ -12,27 +13,18 @@ export default function ContactForm() {
       const [status, setStatus] = useState<string | null>(null);
     
     const validate = () => {
-        let valid = true;
-        const newErrors = { name: "", email: "", message: "" };
-
-        if (!formData.name) {
-            newErrors.name = "Name is required";
-            valid = false;
+        const result = contactSchema.safeParse(formData);
+        if (!result.success) {
+            const fieldErrors = result.error.flatten().fieldErrors;
+            setErrors({
+                name: fieldErrors.name?.[0] || "",
+                email: fieldErrors.email?.[0] || "",
+                message: fieldErrors.message?.[0] || "",
+            });
+            return false;
         }
-        if (!formData.email) {
-            newErrors.email = "Email is required";
-            valid = false;
-        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-            newErrors.email = "Invalid email address";
-            valid = false;
-        }
-        if (!formData.message) {
-            newErrors.message = "Message is required";
-            valid = false;
-        }
-
-        setErrors(newErrors);
-        return valid;
+        setErrors({ name: "", email: "", message: "" });
+        return true;
     };
 
 
