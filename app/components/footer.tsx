@@ -6,7 +6,6 @@ import LinkedinLogoSvg from './linkedin-logo';
 
 export default function FooterBar() {
     return (
-        // <footer className="bg-neutral-800">
         <footer className="bg-neutral-800">
         <div className="container flex flex-col items-center py-8 sm:py-6 mx-auto px-7 max-w-5xl sm:flex-row">
             <span className="flex justify-center items-center order-last sm:order-first">
@@ -24,12 +23,10 @@ export default function FooterBar() {
             <span className="flex justify-center mt-0 mb-6 space-x-5 ml-0 sm:mb-0 sm:ml-auto">
                 <Link href="https://github.com/cameroncolburn/" target="_blank" className="text-neutral-100 hover:text-sky-300">
                     <span className="sr-only">Github</span>
-                    {/* <GithubLogoSvg width={24} height={24}/> */}
                     <GithubLogoSvg className="w-[45px] h-[45px] sm:w-[24px] sm:h-[24px]"/>
                 </Link>
                 <Link href="https://www.linkedin.com/in/camcolburn" target="_blank" className="text-neutral-100 hover:text-sky-300">
                     <span className="sr-only">LinkedIn</span>
-                    {/* <LinkedinLogoSvg width={24} height={24}/> */}
                     <LinkedinLogoSvg className="w-[45px] h-[45px] sm:w-[24px] sm:h-[24px]"/>
                 </Link>
             </span>
