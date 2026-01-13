@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import BorderTopSvg from './components/border-top-svg';
-import LogoBrandSvg from './components/logo-brand-svg';
-import LaptopCircleSvg from './components/laptop-circle-svg';
-import BorderBottomSvg from './components/border-bottom-svg';
-import Card from './components/card';
+import BorderTopSvg from '@/components/icons/border-top-svg';
+import LogoBrandSvg from '@/components/icons/logo-brand-svg';
+import LaptopCircleSvg from '@/components/icons/laptop-circle-svg';
+import BorderBottomSvg from '@/components/icons/border-bottom-svg';
+import Card from '@/components/ui/card';
 import ContactForm from './contact/form'
-import Footer from './components/footer';
+import Footer from '@/components/ui/footer';
 
 export default function Home() {
   return (
@@ -152,7 +152,7 @@ Please visit the projects section below for examples of my work!</p>
           tags={["PHP", "REST API", "Laravel", "Bootstrap", "CodeIgniter"]}
           weblink="https://capstone.colburndigital.com/"
           githublink="https://github.com/cameroncolburn/car_maintenance_tracker"
-          className="relative bg-[url('/capstone-pic.png')] bg-cover bg-center bg-no-repeat min-h-[168px] rounded-tl-[5px] rounded-tr-[5px]"
+          image="/capstone-pic.png"
         />
         <Card
           title="Facial Recognition App"
@@ -160,7 +160,7 @@ Please visit the projects section below for examples of my work!</p>
           category="AI Research Project"
           tags={["Python", "Deepface", "PHP"]}
           githublink="https://github.com/cameroncolburn/from-the-archives"
-          className="relative bg-[url('/face-ai-project.png')] bg-cover bg-center bg-no-repeat min-h-[168px] rounded-tl-[5px] rounded-tr-[5px]"
+          image="/face-ai-project.png"
         />
         <Card
           title="Coin Collector Chatbot"
@@ -168,7 +168,7 @@ Please visit the projects section below for examples of my work!</p>
           category="AI Research Project"
           tags={["PHP", "Laravel", "Python", "ChatGPT"]}
           githublink="https://github.com/cameroncolburn/coin-collector-chatbot"
-          className="relative bg-[url('/coin-chatbot.png')] bg-cover bg-center bg-no-repeat min-h-[168px] rounded-tl-[5px] rounded-tr-[5px]"
+          image="/coin-chatbot.png"
         />
         </div>
 

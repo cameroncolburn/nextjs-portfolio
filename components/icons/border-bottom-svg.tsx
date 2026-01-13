@@ -1,16 +1,13 @@
 import React from "react";
+import { IconProps } from "@/types";
 
-interface BorderBottomSvgProps extends React.SVGProps<SVGSVGElement> {
-    className?: string;
-}
-
-const BorderBottomSvg: React.FC<BorderBottomSvgProps> = ({
+const BorderBottomSvg: React.FC<IconProps> = ({
   className,
   ...props
 }) => (
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      className="relative block h-6 w-[calc(134%+1.3px)]" 
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="relative block h-6 w-[calc(134%+1.3px)]"
       preserveAspectRatio="none"
       viewBox="0 0 1200 120"
       {...props}

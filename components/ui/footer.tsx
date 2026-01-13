@@ -1,15 +1,15 @@
 import Link from 'next/link'
-import LogoBrandSvg from "./logo-brand-svg";
-import { getCurrentYear } from '../utils/dateUtils';
-import GithubLogoSvg from './github-logo';
-import LinkedinLogoSvg from './linkedin-logo';
+import LogoBrandSvg from "@/components/icons/logo-brand-svg";
+import { getCurrentYear } from '@/app/utils/dateUtils';
+import GithubLogoSvg from '@/components/icons/github-logo';
+import LinkedinLogoSvg from '@/components/icons/linkedin-logo';
 
 export default function FooterBar() {
     return (
         <footer className="bg-neutral-800">
         <div className="container flex flex-col items-center py-8 sm:py-6 mx-auto px-7 max-w-5xl sm:flex-row">
             <span className="flex justify-center items-center order-last sm:order-first">
-                <Link 
+                <Link
                     href="#home"
                     className="h-5 text-base group relative z-30  space-x-1.5">
                     <span className="text-xl -translate-y-0.5 group-hover:-rotate-12 group-hover:scale-[1.2] ease-in-out duration-300">
