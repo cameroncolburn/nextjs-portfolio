@@ -1,36 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --color-1: rgb(26, 26, 29);
-  --color-2: rgb(78, 78, 80);
-  --color-3: rgb(111, 34, 50);
-  --color-4: rgb(151, 7, 65);
-  --color-5: rgb(195, 7, 63);
-  --color-6: rgb(243, 243, 243);
-  --color-7: rgb(255, 255, 255);
-  --color-8: rgb(170, 170, 170);
-  --color-9: rgb(52, 52, 52);
-  --color-10: rgb(7, 151, 93);
-  --color-11: rgb(7, 125, 78);
+  /* Semantic color tokens */
+  --foreground: rgb(26, 26, 29);
+  --foreground-muted: rgb(78, 78, 80);
+  --primary-dark: rgb(111, 34, 50);
+  --primary: rgb(151, 7, 65);
+  --accent: rgb(195, 7, 63);
+  --background: rgb(243, 243, 243);
+  --surface: rgb(255, 255, 255);
+  --muted: rgb(170, 170, 170);
+  --border: rgb(52, 52, 52);
+  --success: rgb(7, 151, 93);
+  --success-dark: rgb(7, 125, 78);
 }
 @layer base {
   h1 {
-    @apply text-[40px];
-    @apply font-bold;
-    @apply leading-tight;
+    @apply text-4xl font-bold leading-tight;
   }
   h2 {
-    @apply text-[32px];
-    @apply font-bold;
-    @apply leading-tight;
+    @apply text-3xl font-bold leading-tight;
   }
   h3 {
-    @apply text-[24px];
-    @apply font-bold;
-    @apply leading-tight;
+    @apply text-2xl font-bold leading-tight;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply w-full p-3 rounded-lg bg-white border-2 border-accent text-sm
+           focus:border-sky-300 focus:ring-1 focus:ring-sky-300 outline-none;
   }
 }

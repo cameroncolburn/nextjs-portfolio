@@ -23,11 +23,11 @@ export default function FooterBar() {
             <span className="flex justify-center mt-0 mb-6 space-x-5 ml-0 sm:mb-0 sm:ml-auto">
                 <Link href="https://github.com/cameroncolburn/" target="_blank" className="text-neutral-100 hover:text-sky-300">
                     <span className="sr-only">Github</span>
-                    <GithubLogoSvg className="w-[45px] h-[45px] sm:w-[24px] sm:h-[24px]"/>
+                    <GithubLogoSvg className="w-11 h-11 sm:w-6 sm:h-6"/>
                 </Link>
                 <Link href="https://www.linkedin.com/in/camcolburn" target="_blank" className="text-neutral-100 hover:text-sky-300">
                     <span className="sr-only">LinkedIn</span>
-                    <LinkedinLogoSvg className="w-[45px] h-[45px] sm:w-[24px] sm:h-[24px]"/>
+                    <LinkedinLogoSvg className="w-11 h-11 sm:w-6 sm:h-6"/>
                 </Link>
             </span>
         </div>

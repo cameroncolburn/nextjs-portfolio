@@ -23,21 +23,21 @@ export default function ContactForm() {
         type="text"
         name="name"
         placeholder="Name"
-        className="w-full p-3 rounded-lg bg-white border-2 border-color5 text-sm focus:border-sky-300 focus:ring-1 focus:ring-sky-300 outline-none"
+        className="input-field"
         required
       />
       <input
         type="email"
         name="email"
         placeholder="E-mail"
-        className="w-full p-3 rounded-lg bg-white border-2 border-color5 text-sm focus:border-sky-300 focus:ring-1 focus:ring-sky-300 outline-none"
+        className="input-field"
         required
       />
       <textarea
         placeholder="Message"
         name="message"
         rows={4}
-        className="w-full p-3 rounded-lg bg-white border-2 border-color5 text-sm focus:border-sky-300 focus:ring-1 focus:ring-sky-300 outline-none resize-none"
+        className="input-field resize-none"
         required
       ></textarea>
       <button

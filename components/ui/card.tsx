@@ -14,8 +14,8 @@ export default function Card({
     image = "/template-pic.jpg"
 }: CardProps) {
     return (
-        <div className="w-sm bg-color7 rounded-lg transition-transform duration-150 hover:shadow-[_1px_2px_8px_rgb(23_23_23_/_0.6)] hover:scale-105">
-            <div className="relative min-h-[168px] rounded-tl-[5px] rounded-tr-[5px] overflow-hidden">
+        <div className="w-sm bg-surface rounded-lg transition-transform duration-150 hover:shadow-[_1px_2px_8px_rgb(23_23_23_/_0.6)] hover:scale-105">
+            <div className="relative min-h-44 rounded-t-md overflow-hidden">
                 <Image
                     src={image}
                     alt={title}
@@ -31,13 +31,13 @@ export default function Card({
             </div>
 
             <div className="py-0 px-2 text-sm">
-                {title && <h5 className="text-[22px] font-semibold mt-4 mb-2 text-neutral-800">{title}</h5>}
+                {title && <h5 className="text-xl font-semibold mt-4 mb-2 text-neutral-800">{title}</h5>}
                 {description && <p className="mb-3 text-neutral-700">{description}</p>}
                 <div className="my-4">
                     {tags.map((tag) => (
                         <span
                             key={tag}
-                            className="text-xs bg-emerald-500 text-neutral-100 px-[9px] py-[1px] rounded-[10px] inline-block m-[3px]"
+                            className="text-xs bg-emerald-500 text-neutral-100 px-2.5 py-px rounded-xl inline-block m-1"
                         >
                             {tag}
                         </span>

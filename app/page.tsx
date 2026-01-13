@@ -10,16 +10,16 @@ import Footer from '@/components/ui/footer';
 
 export default function Home() {
   return (
-    <div className="bg-color6 left-0 leading-none top-0 overflow-hidden w-full sticky">
+    <div className="bg-background left-0 leading-none top-0 overflow-hidden w-full sticky">
       <BorderTopSvg className="fill-rose-900"/>
-        <section className="bg-color6 h-screen" id="about">
+        <section className="bg-background h-screen" id="about">
             <div className="flex flex-col justify-center items-center h-5/6 max-w-5xl mx-auto md:flex-row md:justify-around">
                 <div className="self-center max-w-2xl p-4 order-1">
-                    <h1 className="text-rose-700 font-bold text-3xl md:text-5xl sm:max-text-4xl">Cameron Colburn</h1>
-                    <p className="text-neutral-500 font-medium text-lg sm:max-text-xl">Full-Stack Software Developer</p>
+                    <h1 className="text-rose-700 font-bold text-3xl md:text-5xl sm:text-4xl">Cameron Colburn</h1>
+                    <p className="text-neutral-500 font-medium text-lg sm:text-xl">Full-Stack Software Developer</p>
                 </div>
                 <div className="self-center p-8 relative top-0 order-first md:order-last z-4">
-                    <LaptopCircleSvg className="w-[230px] h-[230px] sm:max-w-[300px] sm:max-h-[300px]"/>
+                    <LaptopCircleSvg className="w-60 h-60 sm:max-w-xs sm:max-h-80"/>
                 </div>
             </div>
             <div className="h-1/6">
@@ -47,7 +47,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="p-6 z-10">
-                     <h2 className="text-neutral-100 text-bold">About Me</h2>
+                     <h2 className="text-neutral-100 font-bold">About Me</h2>
                     <p className="mt-4 text-neutral-100">My name is Cam and I am a recent graduate of the three year Software Development program at Mohawk College in Hamilton. Beyond my education, I have spent several years building and broadening my skillset as a Developer.<br/><br/>
 
 My experience as a full-stack developer ranges from working with modern javascript frameworks, designing and improving UI for web apps, writing SQL queries to build reports, and using AI tools in chabots and facial recognition software.<br/><br/>
@@ -55,9 +55,9 @@ My experience as a full-stack developer ranges from working with modern javascri
 Please visit the projects section below for examples of my work!</p>
                 </div>
             </div>
-            <div className="max-w-5xl mx-auto pt-[60px] px-6">
+            <div className="max-w-5xl mx-auto pt-16 px-6">
                 <div className="z-10">
-                    <h3 className="text-neutral-300 text-bold text-lg sm:text-2xl text-center">Technologies I am most familiar with:</h3>
+                    <h3 className="text-neutral-300 font-bold text-lg sm:text-2xl text-center">Technologies I am most familiar with:</h3>
                     <div className="grid grid-cols-3 md:grid-cols-6 sm:grid-cols-4 gap-4 pt-12" id="tech-container">
                         <div className="justify-items-center">
                           {/* java  */}
@@ -130,7 +130,7 @@ Please visit the projects section below for examples of my work!</p>
              </div>
         </section>
           {/* down arrow */}
-          <div className="mt-[30px]">
+          <div className="mt-8">
           <Link href="#portfolio">
             <Image
                 src="/down-arrow.svg"
@@ -142,8 +142,8 @@ Please visit the projects section below for examples of my work!</p>
           </Link>
         </div>
         {/* portfolio section */}
-        <section className="max-w-6xl mx-auto py-[60px] px-6" id="portfolio">
-        <h2 className="text-neutral-800 text-bold text-center">Projects</h2>
+        <section className="max-w-6xl mx-auto py-16 px-6" id="portfolio">
+        <h2 className="text-neutral-800 font-bold text-center">Projects</h2>
         <div className="grid grid-cols-1 mx-auto md:grid-cols-3 sm:grid-cols-2 sm:mx-0 gap-6 md:gap-4 sm:gap-4 py-12" id="tech-container">
         <Card
           title="Car Maintenance App"

@@ -8,21 +8,21 @@ export default {
   ],
   theme: {
     fontFamily: {
-      sans: ["Inter", "sans-serif"],
+      sans: ["var(--font-inter)", "sans-serif"],
     },
     extend: {
       colors: {
-        color1: "var(--color-1)",
-        color2: "var(--color-2)",
-        color3: "var(--color-3)",
-        color4: "var(--color-4)",
-        color5: "var(--color-5)",
-        color6: "var(--color-6)",
-        color7: "var(--color-7)",
-        color8: "var(--color-8)",
-        color9: "var(--color-9)",
-        color10: "var(--color-10)",
-        color11: "var(--color-11)",
+        foreground: "var(--foreground)",
+        "foreground-muted": "var(--foreground-muted)",
+        "primary-dark": "var(--primary-dark)",
+        primary: "var(--primary)",
+        accent: "var(--accent)",
+        background: "var(--background)",
+        surface: "var(--surface)",
+        muted: "var(--muted)",
+        border: "var(--border)",
+        success: "var(--success)",
+        "success-dark": "var(--success-dark)",
       },
       backgroundImage: {
         "background-image": "linear-gradient(to bottom left, var(--tw-gradient-stops))",
