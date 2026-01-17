@@ -4,6 +4,8 @@ import BorderTopSvg from '@/components/icons/border-top-svg';
 import LogoBrandSvg from '@/components/icons/logo-brand-svg';
 import LaptopCircleSvg from '@/components/icons/laptop-circle-svg';
 import BorderBottomSvg from '@/components/icons/border-bottom-svg';
+import GithubLogoSvg from '@/components/icons/github-logo';
+import LinkedinLogoSvg from '@/components/icons/linkedin-logo';
 import Card from '@/components/ui/card';
 import ContactForm from './contact/form'
 import Footer from '@/components/ui/footer';
@@ -15,7 +17,7 @@ export default function Home() {
         <section className="bg-background h-screen" id="about">
             <div className="flex flex-col justify-center items-center h-5/6 max-w-5xl mx-auto md:flex-row md:justify-around">
                 <div className="self-center max-w-2xl p-4 order-1">
-                    <h1 className="text-rose-700 font-bold text-3xl md:text-5xl sm:text-4xl">Cameron Colburn</h1>
+                    <h1 className="text-rose-700 text-3xl md:text-5xl sm:text-4xl">Cameron Colburn</h1>
                     <p className="text-neutral-500 font-medium text-lg sm:text-xl">Full-Stack Software Developer</p>
                 </div>
                 <div className="self-center p-8 relative top-0 order-first md:order-last z-4">
@@ -47,8 +49,8 @@ export default function Home() {
                     />
                 </div>
                 <div className="p-6 z-10">
-                     <h2 className="text-neutral-100 font-bold">About Me</h2>
-                    <p className="mt-4 text-neutral-100">My name is Cam and I am a recent graduate of the three year Software Development program at Mohawk College in Hamilton. Beyond my education, I have spent several years building and broadening my skillset as a Developer.<br/><br/>
+                     <h2 className="text-neutral-100 text-bold">About Me</h2>
+                    <p className="mt-4 text-neutral-100 text-xl">My name is Cam and I am a recent graduate of the three year Software Development program at Mohawk College in Hamilton. Beyond my education, I have spent several years building and broadening my skillset as a Developer.<br/><br/>
 
 My experience as a full-stack developer ranges from working with modern javascript frameworks, designing and improving UI for web apps, writing SQL queries to build reports, and using AI tools in chabots and facial recognition software.<br/><br/>
 
@@ -143,7 +145,8 @@ Please visit the projects section below for examples of my work!</p>
         </div>
         {/* portfolio section */}
         <section className="max-w-6xl mx-auto py-16 px-6" id="portfolio">
-        <h2 className="text-neutral-800 font-bold text-center">Projects</h2>
+        <h2 className="text-neutral-800 text-center">Projects</h2>
+        <p className="mt-4 text-neutral-500 text-xl">The following is a curated group of projects that I feel best represent the range of skills I have developed and the technologies I am most familiar with. Please visit my Github page for more.</p>
         <div className="grid grid-cols-1 mx-auto md:grid-cols-3 sm:grid-cols-2 sm:mx-0 gap-6 md:gap-4 sm:gap-4 py-12" id="tech-container">
         <Card
           title="Car Maintenance App"
@@ -177,8 +180,18 @@ Please visit the projects section below for examples of my work!</p>
         <section className="pt-8 pb-8 sm:pt-12 sm:pb-12 bg-gradient-to-bl from-rose-800 via-rose-900 to-rose-700">
             <div className="flex flex-col md:flex-row justify-between items-start max-w-5xl mx-auto">
                 <div className="p-6 z-10 sm:px-4 sm:py-6 mx-auto">
-                    <h2 className="text-neutral-100 font-bold">Contact Me</h2>
-                    <p className="mt-4 text-neutral-100">Do you have an opportunity you want to discuss, or perhaps just want to chat? Drop me a line.</p>
+                    <h2 className="text-neutral-100">Contact Me</h2>
+                    <p className="mt-4 text-neutral-100 text-xl">Let's connect! Do you have an opportunity you want to discuss, or perhaps just want to chat? Drop me a line.</p>
+                    <div className="flex justify-center mt-8 mb-0 space-x-5 ml-0 sm:mb-0 sm:ml-auto md:justify-start">
+                      <Link href="https://github.com/cameroncolburn/" target="_blank" className="text-neutral-100 hover:text-sky-300">
+                        <span className="sr-only">Github</span>
+                        <GithubLogoSvg className="w-11 h-11"/>
+                      </Link>
+                      <Link href="https://www.linkedin.com/in/camcolburn" target="_blank" className="text-neutral-100 hover:text-sky-300">
+                          <span className="sr-only">LinkedIn</span>
+                          <LinkedinLogoSvg className="w-11 h-11"/>
+                      </Link>
+                    </div>
                 </div>
 
                 <div className="px-4 pb-6 mx-0 sm:mx-auto">

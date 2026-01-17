@@ -7,14 +7,13 @@ import { CardProps } from '@/types';
 export default function Card({
     title = "Project Title",
     description = "Description of project.",
-    category = "Website",
     tags = ["HTML", "CSS", "Javascript"],
     weblink,
     githublink,
     image = "/template-pic.jpg"
 }: CardProps) {
     return (
-        <div className="w-sm bg-surface rounded-lg transition-transform duration-150 hover:shadow-[_1px_2px_8px_rgb(23_23_23_/_0.6)] hover:scale-105">
+        <div className="w-sm h-full flex flex-col bg-surface border-2 border-neutral-300 rounded-lg transition-transform duration-150 hover:shadow-[_1px_2px_8px_rgb(23_23_23_/_0.6)] hover:scale-105 hover:border-neutral-100">
             <div className="relative min-h-44 rounded-t-md overflow-hidden">
                 <Image
                     src={image}
@@ -23,35 +22,32 @@ export default function Card({
                     sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                     className="object-cover object-center"
                 />
-                {category && (
-                    <span className="absolute top-3 left-0 inline-block bg-yellow-300 text-blue-800 font-bold uppercase py-1 px-3 rounded-r-full text-sm z-10">
-                        {category}
-                    </span>
-                )}
             </div>
 
-            <div className="py-0 px-2 text-sm">
-                {title && <h5 className="text-xl font-semibold mt-4 mb-2 text-neutral-800">{title}</h5>}
-                {description && <p className="mb-3 text-neutral-700">{description}</p>}
-                <div className="my-4">
+            <div className="flex-1 flex flex-col py-0 px-3 text-sm">
+                {title && <h5 className="text-xl font-semibold mt-2 mb-1 text-neutral-800">{title}</h5>}
+                <div className="mb-2">
                     {tags.map((tag) => (
                         <span
                             key={tag}
-                            className="text-xs bg-emerald-500 text-neutral-100 px-2.5 py-px rounded-xl inline-block m-1"
+                            className="text-[10px] bg-emerald-200 text-dark-100 px-2 rounded-md inline-block m-1 font-bold"
                         >
                             {tag}
                         </span>
                     ))}
                 </div>
-                <div className="text-right ml-2 mr-2 mb-3">
+                {description && <p className="flex-1 mb-3 text-neutral-700">{description}</p>}
+                <div className="flex justify-end items-center mb-3">
                     {weblink && (
-                        <Link href={weblink} target="_blank" rel="noreferrer" className="text-neutral-800 hover:text-emerald-600">
-                            <GlobeSvg width={24} height={24} className="inline-block ml-2"/>
+                        <Link href={weblink} target="_blank" rel="noreferrer" className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold h-8 px-2 rounded inline-flex items-center mx-1">
+                            <GlobeSvg width={18} height={18} className="inline-block mr-1"/>
+                            <span>Website</span>
                         </Link>
                     )}
                     {githublink && (
-                        <Link href={githublink} target="_blank" rel="noreferrer" className="text-neutral-800 hover:text-emerald-600">
-                            <GithubLogoSvg width={28} height={28} className="inline-block ml-2"/>
+                        <Link href={githublink} target="_blank" rel="noreferrer" className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold h-8 px-2 rounded inline-flex items-center mx-1">
+                            <GithubLogoSvg width={22} height={22} className="inline-block mr-1"/>
+                            <span>Github</span>
                         </Link>
                     )}
                 </div>
